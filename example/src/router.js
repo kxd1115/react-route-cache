@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router';
 import Layout from './Layout';
 import Customer from './views/Customer';
 import User from './views/User';

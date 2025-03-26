@@ -1,6 +1,6 @@
 import './styles.css';
 import { Menu } from 'antd';
-import { useNavigate, useOutlet } from 'react-router-dom';
+import { useNavigate, useOutlet } from 'react-router';
 import { Flex } from 'antd';
 import { RouterKeepAlive, RouterTabs, RouterCache } from '@vgbire/react-keep-alive';
 
