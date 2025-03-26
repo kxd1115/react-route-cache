@@ -1,5 +1,5 @@
 import { useEffect, useId } from 'react';
-import { useLocation } from '@src/router-version';
+import { useLocation } from 'react-router';
 import { LifeCircle } from '../../types';
 import { useKeepAliveContext } from '..';
 
