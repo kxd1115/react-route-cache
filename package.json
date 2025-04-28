@@ -1,6 +1,6 @@
 {
   "name": "@vgbire/react-keep-alive",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "React keepAlive",
   "keywords": [
     "react",
@@ -61,7 +61,6 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "example": "workspace:^",
     "i18next": "^24.2.1"
   }
 }
