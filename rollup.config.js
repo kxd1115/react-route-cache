@@ -8,12 +8,6 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: './lib/index.cjs',
-      format: 'cjs',
-      sourcemap: false,
-      name: 'react-route-cache',
-    },
-    {
       file: './es/index.js',
       format: 'esm',
       sourcemap: false,

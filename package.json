@@ -1,6 +1,6 @@
 {
   "name": "@vgbire/react-keep-alive",
-  "version": "2.1.3",
+  "version": "2.2.1",
   "description": "React keepAlive",
   "keywords": [
     "react",
@@ -27,12 +27,12 @@
     "package.json",
     "README.md"
   ],
-  "main": "./lib/index.cjs",
-  "module": "./es/index.js",
-  "types": "dist/index.d.ts",
+  "module": "es",
   "type": "module",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && rollup -c"
+    "build": "tsc && rollup -c",
+    "test": "npm run start -w example"
   },
   "workspaces": [
     "example"

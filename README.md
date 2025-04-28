@@ -91,13 +91,6 @@ styles?：{
 - 标签式路由页面缓存，打开新路由新增一个标签，切换标签则切换到对应路由
 - 缓存路由页面，切换路由或者点击标签切换页面不会重新加载
 - 注意: 该功能需要用到react-router-dom V6.0/V7.0 + API，不支持react-router-dom V5.0及以下版本使用
-- 默认使用V7版本，如果项目使用的是V6版本，可以使用 `changeVersion` 将功能版本变更为 V6，否则会因为版本不一致报错
-
-  ```js
-  // main.js
-  import { changeVersion } from '@vgbire/react-keep-alive';
-  changeVersion(6);
-  ```
 
 ### 给 Layout 组件的 outlet 加上 keep-alive
 
