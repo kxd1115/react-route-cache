@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      example:
+        specifier: workspace:^
+        version: link:example
       i18next:
         specifier: ^24.2.1
         version: 24.2.3(typescript@5.8.3)
@@ -88,8 +91,8 @@ importers:
         specifier: ^13.5.0
         version: 13.5.0(@testing-library/dom@10.4.0)
       '@vgbire/react-keep-alive':
-        specifier: ../es
-        version: link:../es
+        specifier: ./es
+        version: link:es
       react:
         specifier: ^18.3.1
         version: 18.3.1

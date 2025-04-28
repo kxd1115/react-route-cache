@@ -10,6 +10,8 @@ import { useRouterApi } from './hooks/use-router-api';
 
 export const RouterTabs: FC = () => {
   const { tabs, active, theme, size } = useKeepAliveContext();
+  const [modal, contextHolder] = Modal.useModal();
+
   // 主题style
   const styles = {
     itemBg: theme === 'dark' ? '#001628' : '#fafafa',
@@ -248,7 +250,7 @@ export const RouterTabs: FC = () => {
             zIndex: 2,
           }}
           onClick={() => {
-            Modal.confirm({
+            modal.confirm({
               title: i18n.t('closeAllTabTip'),
               content: i18n.t('closeAllTabContent'),
               cancelText: i18n.t('cancel'),
@@ -260,6 +262,7 @@ export const RouterTabs: FC = () => {
           }}
         />
       )}
+      {contextHolder}
     </Flex>
   );
 };

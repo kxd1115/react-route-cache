@@ -9,6 +9,8 @@ export default {
   output: [
     {
       file: './es/index.js',
+      // 测试时使用该目录
+      // file: './example/es/index.js',
       format: 'esm',
       sourcemap: false,
     },
@@ -21,5 +23,5 @@ export default {
     warn(warning);
   },
   plugins: [nodeResolve(), commonjs(), typescript(), postcss(), terser()],
-  external: ['react', 'react-dom', 'react-router-dom', 'react-router'],
+  external: ['react', 'react-dom', 'react-router-dom', 'react-router', 'antd'],
 };
