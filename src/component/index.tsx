@@ -1,4 +1,4 @@
-import React, { useEffect, ReactNode, RefObject, useState, FC } from 'react';
+import React, { useEffect, ReactNode, RefObject, useState, FC, useLayoutEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 interface ComponentProps {
@@ -20,7 +20,7 @@ export const Component: FC<ComponentProps> = ({ name, show, children, to, style 
     });
   }, [style]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (show) {
       to.current?.replaceChildren(div);
     }

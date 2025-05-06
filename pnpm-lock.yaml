@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      example:
-        specifier: workspace:^
-        version: link:example
       i18next:
         specifier: ^24.2.1
         version: 24.2.3(typescript@5.8.3)
@@ -91,8 +88,8 @@ importers:
         specifier: ^13.5.0
         version: 13.5.0(@testing-library/dom@10.4.0)
       '@vgbire/react-keep-alive':
-        specifier: ./es
-        version: link:es
+        specifier: ../es
+        version: link:../es
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -100,8 +97,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-router:
-        specifier: ^7.2.0
-        version: 7.2.0(react-dom@18.3.1)(react@18.3.1)
+        specifier: ^7.5.2
+        version: 7.5.2(react-dom@18.3.1)(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.26.0)(@babel/plugin-transform-react-jsx@7.25.9)(eslint@8.57.1)(react@18.3.1)(sass@1.87.0)(typescript@5.8.3)
@@ -3114,10 +3111,6 @@ packages:
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
     dependencies:
       '@types/node': 22.15.3
-    dev: false
-
-  /@types/cookie@0.6.0:
-    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
     dev: false
 
   /@types/eslint-scope@3.7.7:
@@ -10283,24 +10276,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-router@7.2.0(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-fXyqzPgCPZbqhrk7k3hPcCpYIlQ2ugIXDboHUzhJISFVy2DEPsmHgN588MyGmkIOv3jDgNfUE3kJi83L28s/LQ==}
-    engines: {node: '>=20.0.0'}
-    peerDependencies:
-      react: '>=18'
-      react-dom: '>=18'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-    dependencies:
-      '@types/cookie': 0.6.0
-      cookie: 1.0.2
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      set-cookie-parser: 2.7.1
-      turbo-stream: 2.4.0
-    dev: false
-
   /react-router@7.5.2(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-9Rw8r199klMnlGZ8VAsV/I8WrIF6IyJ90JQUdboupx1cdkgYqwnrYjH+I/nY/7cA1X5zia4mDJqH36npP7sxGQ==}
     engines: {node: '>=20.0.0'}
@@ -10316,7 +10291,6 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
       set-cookie-parser: 2.7.1
       turbo-stream: 2.4.0
-    dev: true
 
   /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.26.0)(@babel/plugin-transform-react-jsx@7.25.9)(eslint@8.57.1)(react@18.3.1)(sass@1.87.0)(typescript@5.8.3):
     resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
