@@ -55,6 +55,7 @@ export const RouterKeepAlive: FC<RouterKeepAliveProps> = ({
 }) => {
   const { pathname, search } = useLocation();
   const matches: any = useMatches();
+  const currentHandle = matches[matches.length - 1].handle;
 
   const [activateds, setActivateds] = useState({});
   const [deactivateds, setDeactivateds] = useState({});
@@ -96,7 +97,7 @@ export const RouterKeepAlive: FC<RouterKeepAliveProps> = ({
 
     dispatchActivateds();
 
-    const label = matches[matches.length - 1].handle?.[nameKey];
+    const label = currentHandle?.[nameKey];
     const existTab = tabs.find((item) => item.key === key);
     if (!existTab && label) {
       setTabs([
@@ -106,6 +107,10 @@ export const RouterKeepAlive: FC<RouterKeepAliveProps> = ({
           label,
         },
       ]);
+    }
+    if (existTab && existTab.label !== label) {
+      existTab.label = label;
+      setTabs([...tabs]);
     }
   }, [pathname, search, mode]);
 
